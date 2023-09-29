@@ -1,0 +1,266 @@
+<reserved word> class </reserved word>
+<identifier> SquareGame </identifier>
+<symbol> { </symbol>
+<reserved word> field </reserved word>
+<identifier> Square </identifier>
+<identifier> square </identifier>
+<symbol> ; </symbol>
+<reserved word> field </reserved word>
+<reserved word> int </reserved word>
+<identifier> direction </identifier>
+<symbol> ; </symbol>
+<reserved word> constructor </reserved word>
+<identifier> SquareGame </identifier>
+<identifier> new </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<reserved word> let </reserved word>
+<identifier> square </identifier>
+<symbol> = </symbol>
+<identifier> square </identifier>
+<symbol> ; </symbol>
+<reserved word> let </reserved word>
+<identifier> direction </identifier>
+<symbol> = </symbol>
+<identifier> direction </identifier>
+<symbol> ; </symbol>
+<reserved word> return </reserved word>
+<identifier> square </identifier>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<reserved word> method </reserved word>
+<reserved word> void </reserved word>
+<identifier> dispose </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<reserved word> do </reserved word>
+<identifier> square </identifier>
+<symbol> . </symbol>
+<identifier> dispose </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<reserved word> do </reserved word>
+<identifier> Memory </identifier>
+<symbol> . </symbol>
+<identifier> deAlloc </identifier>
+<symbol> ( </symbol>
+<identifier> square </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<reserved word> return </reserved word>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<reserved word> method </reserved word>
+<reserved word> void </reserved word>
+<identifier> run </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<reserved word> var </reserved word>
+<reserved word> char </reserved word>
+<identifier> key </identifier>
+<symbol> ; </symbol>
+<reserved word> var </reserved word>
+<reserved word> boolean </reserved word>
+<identifier> exit </identifier>
+<symbol> ; </symbol>
+<reserved word> let </reserved word>
+<identifier> exit </identifier>
+<symbol> = </symbol>
+<identifier> key </identifier>
+<symbol> ; </symbol>
+<reserved word> while </reserved word>
+<symbol> ( </symbol>
+<identifier> exit </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<reserved word> while </reserved word>
+<symbol> ( </symbol>
+<identifier> key </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<reserved word> let </reserved word>
+<identifier> key </identifier>
+<symbol> = </symbol>
+<identifier> key </identifier>
+<symbol> ; </symbol>
+<reserved word> do </reserved word>
+<identifier> moveSquare </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<reserved word> if </reserved word>
+<symbol> ( </symbol>
+<identifier> key </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<reserved word> let </reserved word>
+<identifier> exit </identifier>
+<symbol> = </symbol>
+<identifier> exit </identifier>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<reserved word> if </reserved word>
+<symbol> ( </symbol>
+<identifier> key </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<reserved word> do </reserved word>
+<identifier> square </identifier>
+<symbol> . </symbol>
+<identifier> decSize </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<reserved word> if </reserved word>
+<symbol> ( </symbol>
+<identifier> key </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<reserved word> do </reserved word>
+<identifier> square </identifier>
+<symbol> . </symbol>
+<identifier> incSize </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<reserved word> if </reserved word>
+<symbol> ( </symbol>
+<identifier> key </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<reserved word> let </reserved word>
+<identifier> direction </identifier>
+<symbol> = </symbol>
+<identifier> exit </identifier>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<reserved word> if </reserved word>
+<symbol> ( </symbol>
+<identifier> key </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<reserved word> let </reserved word>
+<identifier> direction </identifier>
+<symbol> = </symbol>
+<identifier> key </identifier>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<reserved word> if </reserved word>
+<symbol> ( </symbol>
+<identifier> key </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<reserved word> let </reserved word>
+<identifier> direction </identifier>
+<symbol> = </symbol>
+<identifier> square </identifier>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<reserved word> if </reserved word>
+<symbol> ( </symbol>
+<identifier> key </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<reserved word> let </reserved word>
+<identifier> direction </identifier>
+<symbol> = </symbol>
+<identifier> direction </identifier>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<reserved word> while </reserved word>
+<symbol> ( </symbol>
+<identifier> key </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<reserved word> let </reserved word>
+<identifier> key </identifier>
+<symbol> = </symbol>
+<identifier> key </identifier>
+<symbol> ; </symbol>
+<reserved word> do </reserved word>
+<identifier> moveSquare </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
+<reserved word> return </reserved word>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<reserved word> method </reserved word>
+<reserved word> void </reserved word>
+<identifier> moveSquare </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<reserved word> if </reserved word>
+<symbol> ( </symbol>
+<identifier> direction </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<reserved word> do </reserved word>
+<identifier> square </identifier>
+<symbol> . </symbol>
+<identifier> moveUp </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<reserved word> if </reserved word>
+<symbol> ( </symbol>
+<identifier> direction </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<reserved word> do </reserved word>
+<identifier> square </identifier>
+<symbol> . </symbol>
+<identifier> moveDown </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<reserved word> if </reserved word>
+<symbol> ( </symbol>
+<identifier> direction </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<reserved word> do </reserved word>
+<identifier> square </identifier>
+<symbol> . </symbol>
+<identifier> moveLeft </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<reserved word> if </reserved word>
+<symbol> ( </symbol>
+<identifier> direction </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<reserved word> do </reserved word>
+<identifier> square </identifier>
+<symbol> . </symbol>
+<identifier> moveRight </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<reserved word> do </reserved word>
+<identifier> Sys </identifier>
+<symbol> . </symbol>
+<identifier> wait </identifier>
+<symbol> ( </symbol>
+<identifier> direction </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<reserved word> return </reserved word>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>

@@ -1,0 +1,140 @@
+<reserved word> class </reserved word>
+<identifier> Main </identifier>
+<symbol> { </symbol>
+<reserved word> function </reserved word>
+<reserved word> void </reserved word>
+<identifier> main </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<reserved word> var </reserved word>
+<identifier> Array </identifier>
+<identifier> a </identifier>
+<symbol> ; </symbol>
+<reserved word> var </reserved word>
+<reserved word> int </reserved word>
+<identifier> length </identifier>
+<symbol> ; </symbol>
+<reserved word> var </reserved word>
+<reserved word> int </reserved word>
+<identifier> i </identifier>
+<symbol> , </symbol>
+<identifier> sum </identifier>
+<symbol> ; </symbol>
+<reserved word> let </reserved word>
+<identifier> length </identifier>
+<symbol> = </symbol>
+<identifier> Keyboard </identifier>
+<symbol> . </symbol>
+<identifier> readInt </identifier>
+<symbol> ( </symbol>
+<string constant> HOW MANY NUMBERS?  </string constant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<reserved word> let </reserved word>
+<identifier> a </identifier>
+<symbol> = </symbol>
+<identifier> Array </identifier>
+<symbol> . </symbol>
+<identifier> new </identifier>
+<symbol> ( </symbol>
+<identifier> length </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<reserved word> let </reserved word>
+<identifier> i </identifier>
+<symbol> = </symbol>
+<integer> 0 </integer>
+<symbol> ; </symbol>
+<reserved word> while </reserved word>
+<symbol> ( </symbol>
+<identifier> i </identifier>
+<symbol> < </symbol>
+<identifier> length </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<reserved word> let </reserved word>
+<identifier> a </identifier>
+<symbol> [ </symbol>
+<identifier> i </identifier>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<identifier> Keyboard </identifier>
+<symbol> . </symbol>
+<identifier> readInt </identifier>
+<symbol> ( </symbol>
+<string constant> ENTER THE NEXT NUMBER:  </string constant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<reserved word> let </reserved word>
+<identifier> i </identifier>
+<symbol> = </symbol>
+<identifier> i </identifier>
+<symbol> + </symbol>
+<integer> 1 </integer>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<reserved word> let </reserved word>
+<identifier> i </identifier>
+<symbol> = </symbol>
+<integer> 0 </integer>
+<symbol> ; </symbol>
+<reserved word> let </reserved word>
+<identifier> sum </identifier>
+<symbol> = </symbol>
+<integer> 0 </integer>
+<symbol> ; </symbol>
+<reserved word> while </reserved word>
+<symbol> ( </symbol>
+<identifier> i </identifier>
+<symbol> < </symbol>
+<identifier> length </identifier>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<reserved word> let </reserved word>
+<identifier> sum </identifier>
+<symbol> = </symbol>
+<identifier> sum </identifier>
+<symbol> + </symbol>
+<identifier> a </identifier>
+<symbol> [ </symbol>
+<identifier> i </identifier>
+<symbol> ] </symbol>
+<symbol> ; </symbol>
+<reserved word> let </reserved word>
+<identifier> i </identifier>
+<symbol> = </symbol>
+<identifier> i </identifier>
+<symbol> + </symbol>
+<integer> 1 </integer>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<reserved word> do </reserved word>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printString </identifier>
+<symbol> ( </symbol>
+<string constant> THE AVERAGE IS:  </string constant>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<reserved word> do </reserved word>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printInt </identifier>
+<symbol> ( </symbol>
+<identifier> sum </identifier>
+<symbol> / </symbol>
+<identifier> length </identifier>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<reserved word> do </reserved word>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+<reserved word> return </reserved word>
+<symbol> ; </symbol>
+<symbol> } </symbol>
+<symbol> } </symbol>
